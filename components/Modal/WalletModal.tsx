@@ -1,6 +1,6 @@
 import Modal from 'react-modal'
 import { HiXCircle } from 'react-icons/hi'
-import WalletForm from '../WalletForm'
+import WalletForm from '../Form/WalletForm'
 
 interface IWalletModal {
   isOpen: boolean
@@ -18,7 +18,8 @@ const customStyles: Modal.Styles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    // background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2))',
+    background: 'transparent',
+    border: 'none',
     padding: 0,
   },
   overlay: {
@@ -38,9 +39,9 @@ const WalletModal = ({
       onRequestClose={closeModal}
       style={customStyles}
     >
-      <div className="relative flex h-[80vh] max-h-[450px] w-[80vw] max-w-[350px] flex-col justify-center p-5 text-primary lg:max-h-[550px] lg:max-w-[450px] lg:space-y-8">
+      <div className="text-primary relative flex h-[80vh] max-h-[450px] w-[80vw] max-w-[350px] flex-col justify-center bg-gradient-to-b from-primary-bg/50 to-slate-900/70 p-5 shadow-lg backdrop-blur-[2px] lg:max-h-[550px] lg:max-w-[450px] lg:space-y-8">
         <HiXCircle
-          className="absolute right-3 top-3 cursor-pointer text-2xl text-red-400 lg:text-3xl"
+          className="absolute right-3 top-3 cursor-pointer text-2xl text-red-200 lg:text-3xl"
           onClick={closeModal}
         />
         <WalletForm icon={icon} walletName={walletName} />

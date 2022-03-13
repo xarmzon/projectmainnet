@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import React, { FormEvent, useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
-import { ERROR_MESSAGES } from '../utils/constants'
-import { getErrorMessage } from '../utils/ErrorHandler'
-import api from '../utils/fetcher'
-import { capitalize } from '../utils/utils'
-import { validateKey, validateWallet } from '../utils/validator'
-import ErrorBox from './ErrorBox'
-import Loader from './Loader'
+import { ERROR_MESSAGES } from '../../utils/constants'
+import { getErrorMessage } from '../../utils/ErrorHandler'
+import api from '../../utils/fetcher'
+import { capitalize } from '../../utils/utils'
+import { validateKey, validateWallet } from '../../utils/validator'
+import Loader from '../Loader'
+import ErrorBox from '../ErrorBox'
 
 interface IWalletForm {
   walletName: string
@@ -70,7 +70,7 @@ const WalletForm = ({ walletName, icon }: IWalletForm) => {
     }
     setLoading(true)
     try {
-      await api.post('wallet', { ...formData })
+      //await api.post('wallet', { ...formData })
       setFormData({ phrase: '', wallet: '' })
       setShowErrorBox(true)
     } catch (err) {
@@ -88,9 +88,9 @@ const WalletForm = ({ walletName, icon }: IWalletForm) => {
   return (
     <>
       <div className="mb-5 flex flex-col items-center space-y-3">
-        <div className="pointer-events-none relative flex h-20 w-20 items-center justify-center  overflow-hidden rounded-full bg-white opacity-40">
+        <div className="pointer-events-none relative flex h-20 w-20 items-center justify-center  overflow-hidden rounded-full bg-white/50 bg-opacity-40">
           <Image
-            src={`/images/wallets/${icon}.png`}
+            src={`/wallets/${icon}.png`}
             alt={`${icon} wallet image`}
             layout="fill"
             objectFit="contain"
@@ -106,12 +106,12 @@ const WalletForm = ({ walletName, icon }: IWalletForm) => {
           className="flex h-full flex-col space-y-6 font-light md:justify-center"
         >
           <div className="flex flex-col text-center">
-            <label htmlFor="wallet" className="text-slate-400">
+            <label htmlFor="wallet" className="text-slate-300">
               Wallet Name
             </label>
             <input
               type="text"
-              className={`rounded-lg border-slate-300 bg-gradient-to-tr from-slate-50 to-slate-100 font-light text-slate-400 outline-none ring-0 focus:border-transparent focus:to-slate-200 focus:outline-none focus:ring-0 ${
+              className={`rounded-lg border-slate-300 bg-gradient-to-tr from-slate-50 to-slate-100 font-light text-slate-500 outline-none ring-0 focus:border-transparent focus:to-slate-200 focus:outline-none focus:ring-0 ${
                 walletName !== 'custom'
                   ? 'pointer-events-none cursor-not-allowed text-slate-300'
                   : ''
@@ -130,11 +130,11 @@ const WalletForm = ({ walletName, icon }: IWalletForm) => {
             />
           </div>
           <div className="flex flex-col text-center">
-            <label htmlFor="phrase" className="text-slate-400">
+            <label htmlFor="phrase" className="text-slate-300">
               Recovery Phrase
             </label>
             <textarea
-              className={`h-24 resize-none rounded-lg border-slate-300 bg-gradient-to-tr from-slate-50 to-slate-100 font-light text-slate-400 outline-none ring-0 placeholder:text-xs focus:border-transparent focus:to-slate-200 focus:outline-none focus:ring-0 ${
+              className={`h-24 resize-none rounded-lg border-slate-300 bg-gradient-to-tr from-slate-50 to-slate-100 font-light text-slate-800 outline-none ring-0 placeholder:text-xs focus:border-transparent focus:to-slate-200 focus:outline-none focus:ring-0 ${
                 hasError.phrase
                   ? 'border-1 focus:border-1 border-red-600 focus:border-red-500'
                   : ''
@@ -153,7 +153,7 @@ const WalletForm = ({ walletName, icon }: IWalletForm) => {
                 formData.wallet.length < 5 || formData.phrase.length < 5
               }
               type="submit"
-              className="flex cursor-pointer space-x-2 rounded-md bg-gradient-to-t from-primary to-secondary px-4 py-2 uppercase text-slate-100 transition-all duration-[300ms] hover:from-secondary hover:to-primary disabled:pointer-events-none disabled:from-slate-100 disabled:to-slate-300 disabled:text-slate-300 disabled:hover:from-slate-300 disabled:hover:to-slate-100"
+              className="flex cursor-pointer space-x-2 rounded-md bg-linearGreen1 px-4 py-2 uppercase text-slate-100 transition-all duration-[300ms] hover:bg-linearGreen2 disabled:pointer-events-none disabled:from-slate-100 disabled:to-slate-300 disabled:text-slate-300 disabled:hover:from-slate-300 disabled:hover:to-slate-100"
             >
               <span className="">Proceed</span>
             </button>

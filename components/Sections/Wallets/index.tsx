@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { walletsData } from '../../../utils/constants'
 import WalletCard from '../../Card/WalletCard'
+import WalletModal from '../../Modal/WalletModal'
 
 const Wallets = () => {
   const [wallet, setWallet] = useState<string>('')
@@ -40,6 +41,12 @@ const Wallets = () => {
           ))}
         </div>
       </div>
+      <WalletModal
+        isOpen={isOpen}
+        closeModal={closeModal}
+        walletName={wallet}
+        icon={icon}
+      />
     </section>
   )
 }
