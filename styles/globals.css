@@ -1,3 +1,22 @@
+html {
+  scroll-padding-top: 2rem;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-white bg-linearWhite bg-clip-text text-transparent;
+  }
+  .text-gradient2 {
+    @apply bg-white bg-textGradient bg-clip-text text-transparent;
+  }
+
+  .rcontainer {
+    @apply mx-auto max-w-screen-s1440 px-5;
+  }
+  .mw-contents {
+    @apply sm:mx-auto sm:max-w-lg md:max-w-2xl lg:max-w-3xl xl:max-w-5xl;
+  }
+}
