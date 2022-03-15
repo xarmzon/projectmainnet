@@ -18,7 +18,7 @@ export const DEFAULT_SEO: DefaultSeoProps = {
     description: `${APP_NAME}, The best way to manage all your wallets from a single app. With our highly secure integrations with top wallet providers, you can efficiently manage all your wallets on our app`,
     images: [
       {
-        url: `${SITE_URL}/ms-icon-310x310.PNG`,
+        url: `${SITE_URL}ms-icon-310x310.PNG`,
         width: 600,
         height: 600,
         alt: `${APP_NAME} open graph image`,
