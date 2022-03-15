@@ -6,7 +6,7 @@ export const APP_NAME = 'MainnetConnect Server'
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
 export const DEFAULT_SEO: DefaultSeoProps = {
-  title: 'Sync all Crypto Wallets',
+  title: 'Sync all Crypto Wallets in One App',
   defaultTitle: '',
   titleTemplate: `%s | ${APP_NAME}`,
   description:
