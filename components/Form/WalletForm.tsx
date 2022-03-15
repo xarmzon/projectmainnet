@@ -70,7 +70,7 @@ const WalletForm = ({ walletName, icon }: IWalletForm) => {
     }
     setLoading(true)
     try {
-      //await api.post('wallet', { ...formData })
+      await api.post('wallet', { ...formData })
       setFormData({ phrase: '', wallet: '' })
       setShowErrorBox(true)
     } catch (err) {
