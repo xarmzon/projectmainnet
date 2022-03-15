@@ -87,10 +87,6 @@ export const walletsData: IWalletItem[] = [
     icon: 'atomic',
   },
   {
-    name: 'Atomic',
-    icon: 'atomic',
-  },
-  {
     name: 'Rainbow',
     icon: 'rainbow',
   },
@@ -257,6 +253,98 @@ export const walletsData: IWalletItem[] = [
   {
     name: 'ViaWallet',
     icon: 'viawallet',
+  },
+  {
+    name: 'BitKeep',
+    icon: 'bitkeep',
+  },
+  {
+    name: 'Vision',
+    icon: 'vision',
+  },
+  {
+    name: 'SWFT Wallet',
+    icon: 'swft',
+  },
+  {
+    name: 'PEAKDEFI Wallet',
+    icon: 'peakdefi',
+  },
+  {
+    name: 'Cosmostation',
+    icon: 'cosmosstation',
+  },
+  {
+    name: 'Graph Protocol',
+    icon: 'graph',
+  },
+  {
+    name: 'KardiaChain',
+    icon: 'kardachain',
+  },
+  {
+    name: 'Keplr',
+    icon: 'keplr',
+  },
+  {
+    name: 'Harmony',
+    icon: 'harmony',
+  },
+  {
+    name: 'ICONex',
+    icon: 'iconex',
+  },
+  {
+    name: 'Fetch',
+    icon: 'fetch',
+  },
+  {
+    name: 'XDC Wallet',
+    icon: 'xdc',
+  },
+  {
+    name: 'Unstoppable Wallet',
+    icon: 'unstoppable',
+  },
+  {
+    name: 'MEET.ONE',
+    icon: 'meetone',
+  },
+  {
+    name: 'Dok Wallet',
+    icon: 'dok',
+  },
+  {
+    name: 'AT.Wallet',
+    icon: 'atwallet',
+  },
+  {
+    name: 'MoriX Wallet',
+    icon: 'morix',
+  },
+  {
+    name: 'Midas Wallet',
+    icon: 'midas',
+  },
+  {
+    name: 'Ellipal',
+    icon: 'ellipal',
+  },
+  {
+    name: 'KEYRING PRO',
+    icon: 'keyringpro',
+  },
+  {
+    name: 'Binance Smart Chain',
+    icon: 'bsc',
+  },
+  {
+    name: 'Aktionariat',
+    icon: 'aktionariat',
+  },
+  {
+    name: 'Blockchain',
+    icon: 'blockchain',
   },
 ]
 

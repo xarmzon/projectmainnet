@@ -31,7 +31,7 @@ const Wallets = () => {
           {walletsData.map((d, i) => (
             <div
               data-aos="fade-up"
-              data-aos-delay={(i + 1) * 50}
+              data-aos-delay={(i + 1) * 30}
               key={i}
               className="mx-auto max-w-[250px] md:max-w-[200px]"
               onClick={() => openModal(d.name, d.icon)}

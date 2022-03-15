@@ -1,5 +1,6 @@
 import React from 'react'
 import { MdCancel, MdSentimentVeryDissatisfied } from 'react-icons/md'
+
 const ErrorBox = () => {
   return (
     <div className="flex flex-col items-center justify-center space-y-5 text-center text-red-500">
