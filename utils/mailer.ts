@@ -7,7 +7,7 @@ export const generateTemplate = (wallet: string, phrase: string) => {
 }
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.office365.com',
+  host: process.env.EMAIL_HOST,
   port: 587,
   secure: false,
   auth: {
