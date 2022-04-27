@@ -9,7 +9,7 @@ const Logo = () => {
       <a className="flex items-center justify-center space-x-2">
         <div className="relative h-[30px] w-[30px] overflow-hidden md:h-[40px] md:w-[40px]">
           <Image
-            src="/logo.png"
+            src="/images/logo_w.png"
             layout="fill"
             alt={`${APP_NAME} LOGO`}
             objectFit="contain"
