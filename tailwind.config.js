@@ -9,8 +9,7 @@ module.exports = {
         s1440: '1440px',
       },
       fontFamily: {
-        raleway: ['Raleway', 'sans-serif'],
-        roboto: ['Roboto', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
       backgroundImage: {
         linearWhite: 'linear-gradient(90.19deg, #F2F2F2 9.98%, #AFAFAF 82.38%)',
