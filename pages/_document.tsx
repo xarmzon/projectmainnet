@@ -101,7 +101,7 @@ class MyDocument extends Document {
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
           <meta name="theme-color" content="#ffffff" />
         </Head>
-        <body className="min-h-screen w-screen bg-primary-bg font-poppins text-gray-200 scrollbar-thin scrollbar-track-primary-bg scrollbar-thumb-primary-green">
+        <body className="min-h-screen w-screen bg-primary bg-mobile bg-cover bg-center font-poppins text-gray-200 scrollbar-thin scrollbar-track-primary scrollbar-thumb-primary-blue md:bg-desktop">
           <Main />
           <NextScript />
         </body>

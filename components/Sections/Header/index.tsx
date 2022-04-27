@@ -5,12 +5,10 @@ import PoweredBy from '../../PoweredBy'
 
 const Header = () => {
   return (
-    <header className="bg-hero bg-cover pb-8" id="home">
-      <div className="rcontainer">
-        <Navbar />
-        <Hero />
-        <PoweredBy />
-      </div>
+    <header className="w-full bg-ab bg-cover pb-8" id="home">
+      <Navbar />
+      <Hero />
+      <PoweredBy />
     </header>
   )
 }

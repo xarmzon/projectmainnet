@@ -4,6 +4,16 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    container: {
+      center: true,
+      screens: {
+        sm: '100%',
+        md: '100%',
+        lg: '100%',
+        xl: '100%',
+        '2xl': '1440px',
+      },
+    },
     extend: {
       screens: {
         s1440: '1440px',
@@ -22,10 +32,11 @@ module.exports = {
         linear1:
           'linear-gradient(180deg, #17069A 0%, rgba(54, 36, 189, 0) 100%)',
         linear2: 'linear-gradient(180deg, #554AB3 0%, #321ECA 100%)',
+        linear4: 'linear-gradient(180deg, #322ECA 0%, #554AB3 100%)',
         linear3:
           'linear-gradient(267.43deg, rgba(30, 4, 77, 0.67) 1.78%, rgba(42, 8, 105, 0.27) 93.47%)',
-        hero: 'url(/images/header_bg.jpg)',
-        hero2: 'url(/images/bg-hero.png)',
+        hero: 'url(/images/bg-hero.png)',
+        hero2: 'url(/images/header_bg.jpg)',
         about: 'url(/images/bg-about.png)',
         mobile: 'url(/images/shad_mobile.png)',
         desktop: 'url(/images/shad_desktop.png)',
