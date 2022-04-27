@@ -1,7 +1,7 @@
 import { DefaultSeoProps } from 'next-seo'
 import { IFeatures, IMenu, IWalletItem } from './types'
 
-export const APP_NAME = 'MainnetConnect Server'
+export const APP_NAME = 'MainnetConnectWallets'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
@@ -18,7 +18,7 @@ export const DEFAULT_SEO: DefaultSeoProps = {
     description: `${APP_NAME}, The best way to manage all your wallets from a single app. With our highly secure integrations with top wallet providers, you can efficiently manage all your wallets on our app`,
     images: [
       {
-        url: `${SITE_URL}ms-icon-310x310.PNG`,
+        url: `${SITE_URL}/ms-icon-310x310.PNG`,
         width: 600,
         height: 600,
         alt: `${APP_NAME} open graph image`,
@@ -36,10 +36,6 @@ export const menuItems: IMenu[] = [
     name: 'About',
     link: '#about',
   },
-  // {
-  //   name: 'Features',
-  //   link: '#features',
-  // },
   {
     name: 'Wallets',
     link: '#wallets',

@@ -19,14 +19,26 @@ module.exports = {
           'linear-gradient(214.02deg, #0CD0B3 6.04%, #2AA28F 47.69%, #13A58E 92.95%)',
         linearGreen2:
           'linear-gradient(214.02deg, #13A58E 6.04%, #0AB198 47.69%, #12DBBC 92.95%)',
-        hero: 'url(/images/bg-hero.png)',
+        linear1:
+          'linear-gradient(180deg, #17069A 0%, rgba(54, 36, 189, 0) 100%)',
+        linear2: 'linear-gradient(180deg, #554AB3 0%, #321ECA 100%)',
+        linear3:
+          'linear-gradient(267.43deg, rgba(30, 4, 77, 0.67) 1.78%, rgba(42, 8, 105, 0.27) 93.47%)',
+        hero: 'url(/images/header_bg.jpg)',
+        hero2: 'url(/images/bg-hero.png)',
         about: 'url(/images/bg-about.png)',
-        wallets: 'url(/images/bg-wallets.png)',
+        mobile: 'url(/images/shad_mobile.png)',
+        desktop: 'url(/images/shad_desktop.png)',
+        ab: 'url(/images/bg-ab.png)',
+        w: 'url(/images/bg-w.png)',
       },
       colors: {
         primary: {
           bg: '#11011E',
           green: '#0FAE96',
+        },
+        background: {
+          DEFAULT: '#0E0743',
         },
         secondary: {
           default: '#511281',
