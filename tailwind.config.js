@@ -34,12 +34,13 @@ module.exports = {
       },
       colors: {
         primary: {
+          DEFAULT: '#0E0743',
           bg: '#11011E',
           green: '#0FAE96',
+          blue: '#554AB2',
+          blue2: '#5D85DE',
         },
-        background: {
-          DEFAULT: '#0E0743',
-        },
+
         secondary: {
           default: '#511281',
         },
