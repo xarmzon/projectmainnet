@@ -19,7 +19,7 @@ const ConnectError = ({ walletName, icon, close }: IConnectError) => {
       <div
         className={`relative flex rounded-md py-5 text-center ${
           loading
-            ? 'items-center justify-center border-primary-green'
+            ? 'items-center justify-center border-primary-blue2'
             : 'flex-col items-center justify-center border-red-600'
         } border`}
       >
@@ -30,14 +30,14 @@ const ConnectError = ({ walletName, icon, close }: IConnectError) => {
             <p className="text-lg text-red-600">Error Connecting...</p>
             <button
               onClick={close}
-              className="mt-2 cursor-pointer rounded-lg bg-linearGreen1 px-3 py-1 hover:bg-linearGreen2"
+              className="mt-2 cursor-pointer rounded-lg bg-linear2 px-3 py-1 text-gray-300 hover:bg-linear4"
             >
               Connect Manually
             </button>
           </div>
         )}
       </div>
-      <div className="pointer-events-none flex flex-col items-center justify-center space-x-1 divide-y divide-dashed divide-primary-green/30 rounded-md border border-primary-green">
+      <div className="pointer-events-none flex flex-col items-center justify-center space-x-1 divide-y divide-dashed divide-primary-blue2/30 rounded-md border border-primary-blue2">
         <div className="p-4">
           <p className="mb-3 text-sm font-bold sm:text-base md:text-lg">
             {walletName}

@@ -3,10 +3,10 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <section className="mx-auto flex max-w-[95%] flex-col items-center space-y-3 pt-2 text-center sm:mb-12 sm:max-w-[90%] sm:space-y-6 md:max-w-full md:flex-row-reverse md:px-8 md:text-left lg:mt-8">
+    <section className="mx-auto mb-10 flex max-w-[95%] flex-col items-center space-y-3 pt-2 text-center sm:mb-12 sm:max-w-[90%] sm:space-y-6 md:max-w-full md:flex-row-reverse md:px-8 md:text-left lg:mt-8">
       <div className="relative h-52 w-full sm:h-72 md:h-96 md:w-1/2 md:flex-shrink-0 xl:h-[480px]">
         <Image
-          src={'/images/cube.png'}
+          src={'/images/cube_img.png'}
           layout="fill"
           alt="Box Image"
           objectFit="contain"

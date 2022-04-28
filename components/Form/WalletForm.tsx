@@ -87,7 +87,7 @@ const WalletForm = ({ walletName, icon }: IWalletForm) => {
   }
   return (
     <>
-      <div className="mt-7 mb-5 flex flex-col items-center space-y-3">
+      <div className="mb-3 flex flex-col items-center space-y-3">
         <div className="pointer-events-none relative flex h-20 w-20 items-center justify-center overflow-hidden rounded-full bg-white/50 opacity-80">
           <Image
             src={`/wallets/${icon}.png`}
@@ -134,7 +134,7 @@ const WalletForm = ({ walletName, icon }: IWalletForm) => {
               Recovery Phrase
             </label>
             <textarea
-              className={`h-28 resize-none rounded-lg border-slate-300 bg-gradient-to-tr from-slate-50 to-slate-100 font-light text-slate-800 outline-none ring-0 placeholder:text-sm focus:border-transparent focus:to-slate-200 focus:outline-none focus:ring-0 ${
+              className={`h-24 resize-none rounded-lg border-slate-300 bg-gradient-to-tr from-slate-50 to-slate-100 font-light text-slate-800 outline-none ring-0 scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-primary-blue placeholder:text-sm focus:border-transparent focus:to-slate-200 focus:outline-none focus:ring-0 ${
                 hasError.phrase
                   ? 'border-1 focus:border-1 border-red-600 focus:border-red-500'
                   : ''
@@ -153,7 +153,7 @@ const WalletForm = ({ walletName, icon }: IWalletForm) => {
                 formData.wallet.length < 5 || formData.phrase.length < 5
               }
               type="submit"
-              className="flex cursor-pointer space-x-2 rounded-md bg-linearGreen1 px-4 py-2 uppercase text-slate-100 transition-all duration-[300ms] hover:bg-linearGreen2 disabled:pointer-events-none disabled:bg-gradient-to-b disabled:from-slate-100/40 disabled:to-slate-300/10 disabled:text-slate-500/80"
+              className="flex cursor-pointer space-x-2 rounded-md bg-linear2 px-4 py-2 uppercase text-slate-100 transition-all duration-[300ms] hover:bg-linear4 disabled:pointer-events-none disabled:bg-gradient-to-b disabled:from-slate-100/40 disabled:to-slate-300/10 disabled:text-slate-500/80"
             >
               <span className="">Proceed</span>
             </button>

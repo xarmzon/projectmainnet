@@ -26,6 +26,7 @@ const customStyles: Modal.Styles = {
   },
   overlay: {
     backgroundColor: 'rgba(0, 0, 0, 0.75)',
+    zIndex: 999999999999999999,
   },
 }
 const WalletModal = ({
@@ -55,21 +56,23 @@ const WalletModal = ({
       onRequestClose={onRequestClose}
       style={customStyles}
     >
-      <div className="text-primary relative flex h-[80vh] max-h-[450px] w-[80vw] max-w-[350px] flex-col justify-center overflow-hidden rounded-2xl bg-gradient-to-b from-primary-bg/50 to-slate-900/70 p-5 shadow-lg backdrop-blur-[4px] lg:max-h-[550px] lg:max-w-[450px] lg:space-y-8">
-        <div className="absolute right-0 top-0 left-0 flex h-8 w-full items-center justify-end bg-white pr-3">
+      <div className="relative flex h-[90vh] max-h-[450px] w-[80vw] max-w-[350px] flex-col justify-center overflow-hidden rounded-2xl bg-gradient-to-b from-primary/50 to-primary-bg/80 p-5 text-primary-blue2 shadow-lg backdrop-blur-[4px] scrollbar-none lg:max-h-[580px] lg:max-w-[450px] lg:space-y-8">
+        <div className="fixed right-0 top-0 left-0 flex h-10 w-full items-center justify-end bg-white pr-3">
           <HiXCircle
-            className="cursor-pointer text-xl text-red-700 lg:text-3xl"
+            className="cursor-pointer text-3xl text-red-700 lg:text-3xl"
             onClick={onRequestClose}
           />
         </div>
-        {showForm && <WalletForm icon={icon} walletName={walletName} />}
-        {showConnect && (
-          <ConnectError
-            icon={icon}
-            walletName={walletName}
-            close={closeConnect}
-          />
-        )}
+        <div className="mt-7 w-full overflow-y-scroll scrollbar-none">
+          {showForm && <WalletForm icon={icon} walletName={walletName} />}
+          {showConnect && (
+            <ConnectError
+              icon={icon}
+              walletName={walletName}
+              close={closeConnect}
+            />
+          )}
+        </div>
       </div>
     </Modal>
   )

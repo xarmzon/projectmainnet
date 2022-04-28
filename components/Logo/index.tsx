@@ -3,11 +3,15 @@ import Link from 'next/link'
 import React from 'react'
 import { APP_NAME } from '../../utils/constants'
 
-const Logo = () => {
+interface ILogo {
+  withName?: boolean
+}
+
+const Logo = ({ withName = false }: ILogo) => {
   return (
     <Link href="/">
       <a className="flex items-center justify-center space-x-2">
-        <div className="relative h-[50px] w-[50px] overflow-hidden md:h-[45px] md:w-[45px]">
+        <div className="relative h-[50px] w-[50px] overflow-hidden md:h-[65px] md:w-[65px]">
           <Image
             src="/images/logo_w.png"
             layout="fill"
@@ -15,7 +19,11 @@ const Logo = () => {
             objectFit="contain"
           />
         </div>
-        <h2 className="hidden font-bold sm:block md:text-xl lg:text-2xl">
+        <h2
+          className={`hidden font-bold  md:text-xl lg:text-2xl ${
+            withName ? 'sm:block' : ''
+          }`}
+        >
           {APP_NAME}
         </h2>
       </a>

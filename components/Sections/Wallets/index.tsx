@@ -17,17 +17,19 @@ const Wallets = () => {
   return (
     <section
       id="wallets"
-      className="mb-6 min-h-screen bg-wallets bg-cover pb-5"
+      className="container my-12 min-h-screen bg-w bg-top py-10"
     >
       <div className="rcontainer">
         <div className="mw-contents mb-4 text-center">
-          <p className="mb-2 text-xs font-light">
+          <p className="mb-4 text-sm font-light sm:text-base md:text-lg lg:text-xl">
             Ready to start managing your wallets in one place safely and
-            confidently?
+            confidently?Connect your to your wallets and take full control of
+            your crypto wallets in one place. Fully decentralized and completely
+            secured.
           </p>
           <h3 className="text-xl font-bold">CONNECT YOUR WALLETS NOW</h3>
         </div>
-        <div className="relative grid gap-y-4 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
+        <div className="relative mt-8 grid gap-y-4 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
           {walletsData.map((d, i) => (
             <div
               data-aos="fade-up"

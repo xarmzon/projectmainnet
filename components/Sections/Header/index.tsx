@@ -6,7 +6,7 @@ import PoweredBy from '../../PoweredBy'
 const Header = () => {
   return (
     <header
-      className="w-full overflow-hidden bg-hero1 bg-[length:100%_780px] bg-no-repeat pb-8 md:bg-cover"
+      className="container w-full overflow-hidden bg-hero1 bg-[length:100%_780px] bg-no-repeat pb-8 md:bg-cover"
       id="home"
     >
       <Navbar />
