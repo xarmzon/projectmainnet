@@ -1,7 +1,7 @@
 import { DefaultSeoProps } from 'next-seo'
 import { IFeatures, IMenu, IWalletItem } from './types'
 
-export const APP_NAME = 'MainnetConnectWallets'
+export const APP_NAME = 'MainnetConnect'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 

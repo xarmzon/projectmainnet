@@ -20,7 +20,7 @@ const Newsletter = () => {
     }, 3000)
   }
   return (
-    <section className="mx-auto mt-10 mb-8 w-full max-w-lg bg-linear3 text-center shadow-2xl sm:rounded-md sm:p-8">
+    <section className="mx-auto mt-10 mb-8 w-full max-w-3xl bg-linear3 text-center shadow-2xl sm:rounded-md sm:p-8">
       <div className="flex flex-col space-y-5 p-5">
         <div className="">
           <h3 className="text-xl font-bold sm:text-2xl">Subscribe</h3>
