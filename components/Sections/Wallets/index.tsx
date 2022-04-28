@@ -23,7 +23,7 @@ const Wallets = () => {
         <div className="mw-contents mb-4 text-center">
           <p className="mb-4 text-sm font-light sm:text-base md:text-lg lg:text-xl">
             Ready to start managing your wallets in one place safely and
-            confidently?Connect your to your wallets and take full control of
+            confidently? Connect your to your wallets and take full control of
             your crypto wallets in one place. Fully decentralized and completely
             secured.
           </p>
