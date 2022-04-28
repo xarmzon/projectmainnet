@@ -13,7 +13,7 @@ const PoweredBy = () => {
         <h3 className="text-gradient2 mb-2 text-sm font-bold sm:text-xl lg:text-3xl xl:text-4xl">
           POWERED BY
         </h3>
-        <p className="font-roboto text-xs font-light sm:text-base lg:text-lg xl:text-2xl">
+        <p className="font-roboto text-xs font-light sm:text-base lg:text-lg">
           Made possible with your favourites cryptocurrencies
         </p>
       </div>
