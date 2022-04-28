@@ -29,7 +29,7 @@ const Wallets = () => {
           </p>
           <h3 className="text-xl font-bold">CONNECT YOUR WALLETS NOW</h3>
         </div>
-        <div className="relative mt-8 grid gap-y-4 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
+        <div className="relative mt-8 grid gap-y-4 sm:grid-cols-2 sm:gap-4 sm:gap-y-6 md:grid-cols-3 lg:grid-cols-4 lg:gap-y-8">
           {walletsData.map((d, i) => (
             <div
               data-aos="fade-up"
