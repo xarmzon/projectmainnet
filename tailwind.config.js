@@ -36,6 +36,7 @@ module.exports = {
         linear3:
           'linear-gradient(267.43deg, rgba(30, 4, 77, 0.67) 1.78%, rgba(42, 8, 105, 0.27) 93.47%)',
         hero: 'url(/images/bg-hero.png)',
+        hero1: 'url(/images/bg-hero1.png)',
         hero2: 'url(/images/header_bg.jpg)',
         about: 'url(/images/bg-about.png)',
         mobile: 'url(/images/shad_mobile.png)',

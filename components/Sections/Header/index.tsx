@@ -5,7 +5,10 @@ import PoweredBy from '../../PoweredBy'
 
 const Header = () => {
   return (
-    <header className="w-full bg-ab bg-cover pb-8" id="home">
+    <header
+      className="w-full overflow-hidden bg-hero1 bg-[length:100%_780px] bg-no-repeat pb-8 md:bg-cover"
+      id="home"
+    >
       <Navbar />
       <Hero />
       <PoweredBy />
