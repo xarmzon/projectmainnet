@@ -8,13 +8,13 @@ import Image from 'next/image'
 
 const PoweredBy = () => {
   return (
-    <div className="mw-contents mt-5 flex  flex-col rounded-md border-[1px] border-white/20 py-2 sm:flex-row sm:p-5 md:flex-row">
+    <div className="mw-contents mx-auto mt-5 flex max-w-[90%]  flex-col rounded-md border-[1px] border-white/20 py-2 sm:flex-row sm:p-5 md:flex-row">
       <div className="text-center sm:w-[60%] sm:flex-shrink-0 sm:text-left md:w-[55%]">
         <h3 className="text-gradient2 mb-2 text-sm font-bold sm:text-xl lg:text-3xl xl:text-4xl">
           POWERED BY
         </h3>
         <p className="font-roboto text-xs font-light sm:text-base lg:text-lg xl:text-2xl">
-          Powered by your favourite cryptocurrencies
+          Made possible with your favourites cryptocurrencies
         </p>
       </div>
       <div className="mt-4 overflow-hidden pl-7 sm:w-[40%] sm:pl-1 md:w-[45%]">
