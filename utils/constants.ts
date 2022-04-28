@@ -71,6 +71,14 @@ export const walletsData: IWalletItem[] = [
     icon: 'metamask',
   },
   {
+    name: 'Coinbase',
+    icon: 'coinbase',
+  },
+  {
+    name: 'Phantom',
+    icon: 'phantom',
+  },
+  {
     name: 'Trust',
     icon: 'trust',
   },
