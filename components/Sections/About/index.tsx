@@ -12,13 +12,13 @@ const About = () => {
           </h2>
           <div className="flex flex-col sm:space-y-5 md:flex-row md:items-center md:justify-between md:space-y-0">
             <div className="w-full text-center md:w-1/2 md:flex-shrink-0 md:text-left">
-              <p className="text-sm font-light leading-normal sm:text-base md:text-base lg:text-lg">
+              <p className="text-sm font-light leading-normal lg:text-base">
                 We powered next generation application for blockchain and
                 cryptocurrency asset management which enables you to manually or
                 automatically sync your crypto wallets accounts into a single
                 platform.
               </p>
-              <p className="mt-3 text-sm font-light leading-normal sm:text-base md:text-base lg:mt-5 lg:text-lg">
+              <p className="mt-3 text-sm font-light leading-normal lg:mt-5 lg:text-base">
                 One combined view for all of the transaction histories across
                 all of your accounts.
               </p>

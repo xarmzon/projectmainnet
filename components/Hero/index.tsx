@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { BiUser, BiWallet } from 'react-icons/bi'
+import Stats from './Stats'
 
 const Hero = () => {
   return (
@@ -28,6 +30,20 @@ const Hero = () => {
             Connect Now
           </a>
         </Link>
+        <div className="flex w-full flex-row items-center justify-center space-x-5 py-4 md:justify-start">
+          <Stats
+            className="bg-gradient-to-r !from-emerald-900 !to-primary-green !text-gray-100"
+            text="Users"
+            count={200}
+            icon={<BiUser />}
+          />
+          <Stats
+            className="bg-gradient-to-r !from-primary-blue !to-blue-900 !text-gray-100"
+            text="Wallets"
+            count={70}
+            icon={<BiWallet />}
+          />
+        </div>
       </div>
     </section>
   )
