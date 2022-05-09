@@ -1,7 +1,7 @@
 import React from 'react'
-import Hero from '../../Hero'
-import Navbar from '../../Navbar/Navbar'
-import PoweredBy from '../../PoweredBy'
+import Hero from '../Hero'
+import Navbar from '../Navbar/Navbar'
+import PoweredBy from '../PoweredBy'
 
 interface IHeader {
   showHeroAndPoweredBy?: boolean

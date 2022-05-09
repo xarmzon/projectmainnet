@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaDiscord, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
-import { APP_NAME } from '../../../utils/constants'
-import Logo from '../../Logo'
+import { APP_NAME } from '../../utils/constants'
+import Logo from '../Logo'
 
 const Footer = () => {
   return (

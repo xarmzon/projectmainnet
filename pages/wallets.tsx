@@ -1,8 +1,8 @@
 import React from 'react'
-import Footer from '../components/Sections/Footer'
-import Header from '../components/Sections/Header'
-import Newsletter from '../components/Sections/Newsletter'
-import Wallets from '../components/Sections/Wallets'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+import Newsletter from '../components/Newsletter'
+import Wallets from '../components/Wallets'
 
 const WalletsPage = () => {
   return (

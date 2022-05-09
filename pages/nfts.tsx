@@ -1,13 +1,14 @@
 import React from 'react'
-import Footer from '../components/Sections/Footer'
-import Header from '../components/Sections/Header'
-import Newsletter from '../components/Sections/Newsletter'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+import Newsletter from '../components/Newsletter'
+import NFts from '../components/NFTs'
 
 const NFTsPage = () => {
   return (
     <>
       <Header showHeroAndPoweredBy={false} />
-      {/* <Wallets /> */}
+      <NFts />
       <Newsletter />
       <Footer />
     </>

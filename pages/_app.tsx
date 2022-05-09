@@ -1,5 +1,3 @@
-import '../styles/globals.css'
-import 'aos/dist/aos.css'
 import type { AppProps } from 'next/app'
 import { DefaultSeo } from 'next-seo'
 import { DEFAULT_SEO } from '../utils/constants'
@@ -8,6 +6,8 @@ import aos from 'aos'
 import { Toaster } from 'react-hot-toast'
 import PageLoader from '../components/Loader/PageLoader'
 import { useRouter } from 'next/router'
+import '../styles/globals.css'
+import 'aos/dist/aos.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()

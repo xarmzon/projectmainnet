@@ -4,6 +4,14 @@ export type AboutData = {
   description: string
   image: string
 }
+export type NFTsProviderData = {
+  name: string
+  feature?: {
+    type: 'primary' | 'secondary'
+    text: string
+  }
+  image: string
+}
 export interface IMenu {
   name: string
   link: string

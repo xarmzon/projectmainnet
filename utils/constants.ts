@@ -1,5 +1,5 @@
 import { DefaultSeoProps } from 'next-seo'
-import { AboutData, IMenu, IWalletItem } from './types'
+import { AboutData, IMenu, IWalletItem, NFTsProviderData } from './types'
 
 export const APP_NAME = 'THE PROJECT MAINNET'
 
@@ -55,6 +55,41 @@ export const ABOUT_DATA: AboutData[] = [
     description:
       'We powered next generation application for blockchain and cryptocurrency asset management which enables you to manually or automatically sync your crypto wallets accounts into a single platform.',
     image: 'app_illustration2',
+  },
+]
+
+export const NFTs_PROVIDER_DATA: NFTsProviderData[] = [
+  {
+    name: 'MetaMask',
+    image: 'metamask',
+    feature: {
+      text: 'Popular',
+      type: 'primary',
+    },
+  },
+  {
+    name: 'Coinbase Wallet',
+    image: 'coinbase',
+  },
+  {
+    name: 'WalletConnect',
+    image: 'wallet_connect',
+  },
+  {
+    name: 'Phantom',
+    image: 'phantom',
+    feature: {
+      text: 'Solana',
+      type: 'secondary',
+    },
+  },
+  {
+    name: 'Glow',
+    image: 'glow',
+    feature: {
+      text: 'Solana',
+      type: 'secondary',
+    },
   },
 ]
 

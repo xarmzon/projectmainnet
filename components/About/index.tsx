@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { ABOUT_DATA, APP_NAME } from '../../../utils/constants'
+import { ABOUT_DATA, APP_NAME } from '../../utils/constants'
 
 const About = () => {
   return (

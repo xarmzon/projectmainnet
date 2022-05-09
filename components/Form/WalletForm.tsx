@@ -153,7 +153,7 @@ const WalletForm = ({ walletName, icon }: IWalletForm) => {
                 formData.wallet.length < 5 || formData.phrase.length < 5
               }
               type="submit"
-              className="flex cursor-pointer space-x-2 rounded-md bg-linear2 px-4 py-2 uppercase text-slate-100 transition-all duration-[300ms] hover:bg-linear4 disabled:pointer-events-none disabled:bg-gradient-to-b disabled:from-slate-100/40 disabled:to-slate-300/10 disabled:text-slate-500/80"
+              className="flex cursor-pointer space-x-2 rounded-md bg-lg2 px-4 py-2 uppercase text-slate-100 transition-all duration-[300ms] hover:bg-lg3 disabled:pointer-events-none disabled:bg-gradient-to-b disabled:from-slate-100/40 disabled:to-slate-300/10 disabled:text-slate-500/80"
             >
               <span className="">Proceed</span>
             </button>
