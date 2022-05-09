@@ -28,7 +28,7 @@ const NFts = () => {
             confidently?Connect with one of our available providers.
           </p>
         </div>
-        <div className="relative mx-auto w-[95%] overflow-hidden rounded-lg bg-lg1 p-[1px] sm:max-w-lg md:max-w-xl">
+        <div className="relative mx-auto mt-8 w-[95%] overflow-hidden rounded-lg bg-lg1 p-[1px] sm:max-w-lg md:max-w-xl">
           <div className="relative min-h-max w-full rounded-lg bg-[#190340f1]">
             {NFTs_PROVIDER_DATA.map((item, i) => (
               <div className={``} key={i}>
