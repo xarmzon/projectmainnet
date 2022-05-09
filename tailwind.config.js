@@ -35,6 +35,12 @@ module.exports = {
         linear4: 'linear-gradient(180deg, #322ECA 0%, #554AB3 100%)',
         linear3:
           'linear-gradient(267.43deg, rgba(30, 4, 77, 0.67) 1.78%, rgba(42, 8, 105, 0.27) 93.47%)',
+
+        lg1: 'linear-gradient(89.59deg, #6788FF 22.6%, #C5FFE5 78.98%)',
+        lg2: 'linear-gradient(89.59deg, #6788FF 22.6%, #C5FFE5 78.98%)linear-gradient(96.18deg, rgba(103, 136, 255, 0.69) 9.89%, rgba(85, 74, 179, 0.69) 91.83%)',
+        lg3: 'linear-gradient(90.15deg, #981664 35.4%, #F1275A 83.54%)',
+        lg4: 'linear-gradient(96.18deg, rgba(103, 136, 255, 0.69) 9.89%, rgba(85, 74, 179, 0.69) 91.83%)',
+
         hero: 'url(/images/bg-hero.png)',
         hero1: 'url(/images/bg-hero1.png)',
         hero2: 'url(/images/header_bg.jpg)',
@@ -51,6 +57,7 @@ module.exports = {
           green: '#0FAE96',
           blue: '#554AB2',
           blue2: '#5D85DE',
+          blue3: '#CFC9FC',
         },
 
         secondary: {

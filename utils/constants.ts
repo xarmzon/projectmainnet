@@ -1,7 +1,7 @@
 import { DefaultSeoProps } from 'next-seo'
 import { IFeatures, IMenu, IWalletItem } from './types'
 
-export const APP_NAME = 'MainnetConnect'
+export const APP_NAME = 'ProjectMainnet'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
@@ -21,7 +21,7 @@ export const DEFAULT_SEO: DefaultSeoProps = {
         url: `${SITE_URL}/ms-icon-310x310.PNG`,
         width: 600,
         height: 600,
-        alt: `${APP_NAME} open graph image`,
+        alt: `${APP_NAME}`,
       },
     ],
   },
@@ -33,12 +33,12 @@ export const menuItems: IMenu[] = [
     link: '/',
   },
   {
-    name: 'About',
-    link: '#about',
+    name: 'Wallets',
+    link: 'wallets',
   },
   {
-    name: 'Wallets',
-    link: '#wallets',
+    name: 'NFTs',
+    link: 'nfts',
   },
 ]
 
