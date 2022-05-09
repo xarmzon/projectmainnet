@@ -7,7 +7,7 @@ import Wallets from '../components/Sections/Wallets'
 const WalletsPage = () => {
   return (
     <>
-      <Header />
+      <Header showHeroAndPoweredBy={false} />
       <Wallets />
       <Newsletter />
       <Footer />

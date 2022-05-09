@@ -3,15 +3,26 @@ import Hero from '../../Hero'
 import Navbar from '../../Navbar/Navbar'
 import PoweredBy from '../../PoweredBy'
 
-const Header = () => {
+interface IHeader {
+  showHeroAndPoweredBy?: boolean
+}
+const Header = ({ showHeroAndPoweredBy = true }: IHeader) => {
   return (
     <header
-      className="container w-full overflow-hidden bg-hero1 bg-[length:100%_780px] bg-no-repeat pb-8 md:bg-cover"
+      className={`container w-full overflow-hidden ${
+        showHeroAndPoweredBy
+          ? 'bg-hero1 bg-[length:100%_780px] bg-no-repeat pb-8 md:bg-cover'
+          : ''
+      }`}
       id="home"
     >
       <Navbar />
-      <Hero />
-      <PoweredBy />
+      {showHeroAndPoweredBy && (
+        <>
+          <Hero />
+          <PoweredBy />
+        </>
+      )}
     </header>
   )
 }

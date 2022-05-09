@@ -20,14 +20,14 @@ const Wallets = () => {
       className="container my-12 min-h-screen bg-w bg-top py-10"
     >
       <div className="rcontainer">
-        <div className="mw-contents mb-4 text-center">
+        <div className="mx-auto mb-4 w-full max-w-md text-center md:max-w-lg lg:max-w-xl">
+          <h3 className="mb-3 bg-lg1 bg-clip-text text-lg font-bold text-transparent sm:text-xl">
+            CONNECT YOUR WALLETS NOW
+          </h3>
           <p className="mb-4 text-sm font-light md:text-base lg:text-lg">
-            Ready to start managing your wallets in one place safely and
-            confidently? Connect your to your wallets and take full control of
-            your crypto wallets in one place. Fully decentralized and completely
-            secured.
+            Connect your to your wallets and take full control of your crypto
+            wallets in one place. Fully decentralized and completely secured.
           </p>
-          <h3 className="text-xl font-bold">CONNECT YOUR WALLETS NOW</h3>
         </div>
         <div className="relative mt-8 grid gap-y-4 sm:grid-cols-2 sm:gap-4 sm:gap-y-6 md:grid-cols-3 lg:grid-cols-4 lg:gap-y-8">
           {walletsData.map((d, i) => (
