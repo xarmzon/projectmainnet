@@ -25,7 +25,7 @@ const Wallets = () => {
             CONNECT YOUR WALLETS NOW
           </h3>
           <p className="mb-4 text-sm font-light md:text-base lg:text-lg">
-            Connect your to your wallets and take full control of your crypto
+            Connect to your wallets and take full control of your crypto
             wallets in one place. Fully decentralized and completely secured.
           </p>
         </div>
