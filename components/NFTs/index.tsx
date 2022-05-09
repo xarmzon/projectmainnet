@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
-import { NFTs_PROVIDER_DATA, walletsData } from '../../utils/constants'
-import WalletCard from '../Card/WalletCard'
+import { NFTs_PROVIDER_DATA } from '../../utils/constants'
 import WalletModal from '../Modal/WalletModal'
 const NFts = () => {
   const [wallet, setWallet] = useState<string>('')
