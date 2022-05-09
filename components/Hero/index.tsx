@@ -40,7 +40,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className="mt-4 text-sm font-light tracking-wider sm:text-base lg:mt-6 lg:text-lg">
-            A modern app that allow you to import and manage all of your crypto
+            A modern app that allows you to import and manage all of your crypto
             wallets account in one place.
           </p>
         </div>
