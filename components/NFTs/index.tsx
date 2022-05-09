@@ -16,7 +16,7 @@ const NFts = () => {
   return (
     <section
       id="wallets"
-      className="container my-12 min-h-screen bg-w bg-top py-10"
+      className="container my-12 min-h-screen bg-w bg-center py-10"
     >
       <div className="rcontainer">
         <div className="mx-auto mb-4 w-full max-w-md text-center md:max-w-lg lg:max-w-xl">
