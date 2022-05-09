@@ -26,7 +26,7 @@ const customStyles: Modal.Styles = {
   },
   overlay: {
     backgroundColor: 'rgba(0, 0, 0, 0.75)',
-    zIndex: 999999999999999999,
+    zIndex: 999,
   },
 }
 const WalletModal = ({

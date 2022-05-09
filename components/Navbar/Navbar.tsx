@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex h-16 w-full flex-shrink-0 items-center justify-between px-5 pt-6 md:pt-5">
-      <Logo />
+      <Logo withName={true} type="small" />
       <div
         className={`fixed z-[9999999] bg-primary/80 py-8 backdrop-blur-sm transition-all duration-500 sm:relative sm:top-0 sm:z-auto sm:flex sm:justify-end sm:bg-transparent sm:bg-none sm:py-0 sm:opacity-100 sm:backdrop-blur-none ${
           navOpen

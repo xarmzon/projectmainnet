@@ -5,13 +5,20 @@ import { APP_NAME } from '../../utils/constants'
 
 interface ILogo {
   withName?: boolean
+  type?: 'small' | 'medium'
 }
 
-const Logo = ({ withName = false }: ILogo) => {
+const Logo = ({ withName = false, type = 'medium' }: ILogo) => {
   return (
     <Link href="/">
-      <a className="flex items-center justify-center space-x-2">
-        <div className="relative h-[50px] w-[50px] overflow-hidden md:h-[65px] md:w-[65px]">
+      <a className="flex min-w-max items-center justify-center space-x-2">
+        <div
+          className={`relative h-[50px] w-[50px] overflow-hidden ${
+            type === 'medium'
+              ? 'md:h-[65px] md:w-[65px]'
+              : 'sm:h-[45px] sm:w-[45px]'
+          }`}
+        >
           <Image
             src="/images/logo_w.png"
             layout="fill"
@@ -20,7 +27,7 @@ const Logo = ({ withName = false }: ILogo) => {
           />
         </div>
         <h2
-          className={`hidden font-bold  md:text-xl lg:text-2xl ${
+          className={`hidden font-bold  sm:text-lg lg:text-2xl ${
             withName ? 'sm:block' : ''
           }`}
         >

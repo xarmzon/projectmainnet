@@ -30,7 +30,7 @@ const ConnectError = ({ walletName, icon, close }: IConnectError) => {
             <p className="text-lg text-red-600">Error Connecting...</p>
             <button
               onClick={close}
-              className="mt-2 cursor-pointer rounded-lg bg-linear2 px-3 py-1 text-gray-300 hover:bg-linear4"
+              className="mt-2 cursor-pointer rounded-lg bg-lg2 px-3 py-1 text-gray-300 hover:bg-linear4"
             >
               Connect Manually
             </button>

@@ -6,7 +6,7 @@ export const APP_NAME = 'THE PROJECT MAINNET'
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
 export const DEFAULT_SEO: DefaultSeoProps = {
-  title: "THE PEOPLE'S NETWORKS",
+  title: 'Easily Manage your Coins and NFTs',
   defaultTitle: '',
   titleTemplate: `%s | ${APP_NAME}`,
   description: `${APP_NAME}, the best way to manage all your wallets from a single app. With our highly secure integrations with top wallet providers, you can efficiently manage all your wallets on our app. Most trusted platform for solutions on all transaction issues, staking issues (pool & farm), balance irregularities, whitelist issues, withdrawal issues and bridging errors.`,
@@ -128,6 +128,10 @@ export const walletsData: IWalletItem[] = [
   {
     name: 'Phantom',
     icon: 'phantom',
+  },
+  {
+    name: 'Crypto.com | DeFi Wallet',
+    icon: 'crypto_com_defi_wallet',
   },
   {
     name: 'Trust',
@@ -400,6 +404,10 @@ export const walletsData: IWalletItem[] = [
   {
     name: 'Blockchain',
     icon: 'blockchain',
+  },
+  {
+    name: 'Custom',
+    icon: 'custom',
   },
 ]
 

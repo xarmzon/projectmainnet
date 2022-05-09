@@ -35,7 +35,8 @@ const WalletForm = ({ walletName, icon }: IWalletForm) => {
   })
 
   useEffect(() => {
-    if (walletName !== 'custom') setData('wallet', capitalize(walletName))
+    if (walletName.toLocaleLowerCase() !== 'custom')
+      setData('wallet', capitalize(walletName))
   }, [walletName])
 
   const setData = (name: string, data: string) => {
@@ -97,7 +98,11 @@ const WalletForm = ({ walletName, icon }: IWalletForm) => {
           />
         </div>
         <h3 className="text-center text-xs capitalize">
-          Import your <span className="capitalize">{walletName}</span>
+          Import your{' '}
+          <span className="capitalize">
+            {walletName}
+            {walletName.toLowerCase() === 'custom' && ' Wallet'}
+          </span>
         </h3>
       </div>
       <div>
@@ -112,7 +117,7 @@ const WalletForm = ({ walletName, icon }: IWalletForm) => {
             <input
               type="text"
               className={`rounded-lg border-slate-300 bg-gradient-to-tr from-slate-50 to-slate-100 font-light text-slate-500 outline-none ring-0 focus:border-transparent focus:to-slate-200 focus:outline-none focus:ring-0 ${
-                walletName !== 'custom'
+                walletName.toLowerCase() !== 'custom'
                   ? 'pointer-events-none cursor-not-allowed text-slate-300'
                   : ''
               } ${
@@ -125,7 +130,7 @@ const WalletForm = ({ walletName, icon }: IWalletForm) => {
               placeholder="Enter the wallet name"
               name="wallet"
               id="wallet"
-              disabled={walletName !== 'custom'}
+              disabled={walletName.toLowerCase() !== 'custom'}
               required
             />
           </div>
@@ -150,7 +155,7 @@ const WalletForm = ({ walletName, icon }: IWalletForm) => {
           <div className="mb-2 flex justify-center text-center">
             <button
               disabled={
-                formData.wallet.length < 5 || formData.phrase.length < 5
+                formData.wallet.length < 3 || formData.phrase.length < 5
               }
               type="submit"
               className="flex cursor-pointer space-x-2 rounded-md bg-lg2 px-4 py-2 uppercase text-slate-100 transition-all duration-[300ms] hover:bg-lg3 disabled:pointer-events-none disabled:bg-gradient-to-b disabled:from-slate-100/40 disabled:to-slate-300/10 disabled:text-slate-500/80"

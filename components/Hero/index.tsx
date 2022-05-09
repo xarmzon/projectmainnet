@@ -23,8 +23,8 @@ const Hero = () => {
                 WEB3.0
               </span>
             </div>
-            <span className="bg-lg3 bg-clip-text pl-3 pr-4 font-bold text-transparent">
-              PEOPLE POWERED NETWORKS.
+            <span className="bg-lg3 bg-clip-text pl-3 pr-4 font-semibold text-transparent">
+              PEOPLE-POWERED NETWORKS.
             </span>
           </div>
         </div>

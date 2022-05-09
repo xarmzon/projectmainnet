@@ -37,7 +37,7 @@ const NFts = () => {
                   className={`relative flex h-full cursor-pointer items-center justify-between px-5 py-4`}
                 >
                   <div className="flex items-center space-x-1">
-                    <div className="relative h-8 w-8 overflow-hidden rounded-full">
+                    <div className="relative h-8 w-8 overflow-hidden rounded-full bg-white">
                       <Image
                         src={`/wallets/${item.image}.png`}
                         alt={`${item.image} wallet image`}
