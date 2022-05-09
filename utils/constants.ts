@@ -1,21 +1,20 @@
 import { DefaultSeoProps } from 'next-seo'
 import { IFeatures, IMenu, IWalletItem } from './types'
 
-export const APP_NAME = 'ProjectMainnet'
+export const APP_NAME = 'Project Mainnet'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
 export const DEFAULT_SEO: DefaultSeoProps = {
-  title: 'Sync all Crypto Wallets in One App',
+  title: 'THE PROJECT MAINNET',
   defaultTitle: '',
   titleTemplate: `%s | ${APP_NAME}`,
-  description:
-    'The best way to manage all your wallets from a single app. With our highly secure integrations with top wallet providers, you can efficiently manage all your wallets on our app',
+  description: `${APP_NAME}, the best way to manage all your wallets from a single app. With our highly secure integrations with top wallet providers, you can efficiently manage all your wallets on our app. Most trusted platform for solutions on all transaction issues, staking issues (pool & farm), balance irregularities, whitelist issues, withdrawal issues and bridging errors.`,
   openGraph: {
     type: 'website',
     url: SITE_URL,
     title: APP_NAME,
-    description: `${APP_NAME}, The best way to manage all your wallets from a single app. With our highly secure integrations with top wallet providers, you can efficiently manage all your wallets on our app`,
+    description: `${APP_NAME}, the best way to manage all your wallets from a single app. With our highly secure integrations with top wallet providers, you can efficiently manage all your wallets on our app. Most trusted platform for solutions on all transaction issues, staking issues (pool & farm), balance irregularities, whitelist issues, withdrawal issues and bridging errors.`,
     images: [
       {
         url: `${SITE_URL}/ms-icon-310x310.PNG`,
