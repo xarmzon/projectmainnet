@@ -60,7 +60,7 @@ const Hero = () => {
           <Stats
             className="!bg-lg2 !text-gray-100"
             text="Users"
-            count={200}
+            count={2000}
             icon={<BiUser />}
           />
           <Stats
