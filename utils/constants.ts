@@ -43,8 +43,8 @@ export const menuItems: IMenu[] = [
 
 export const ABOUT_DATA: AboutData[] = [
   {
-    heading1: 'A new universe of',
-    heading2: 'connected services.',
+    heading1: 'The most efficient solution provider in the',
+    heading2: 'blockchain.',
     description:
       'Most trusted platform for solutions on all transaction issues, staking issues (pool & farm), balance irregularities, whitelist issues, withdrawal issues and bridging errors.',
     image: 'app_illustration1',
