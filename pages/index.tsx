@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <>
       <Header />
       <About />
-      <Wallets />
+      {/* <Wallets /> */}
       <Newsletter />
       <Footer />
     </>

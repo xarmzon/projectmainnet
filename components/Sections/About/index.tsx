@@ -1,40 +1,44 @@
 import Image from 'next/image'
 import React from 'react'
-import { APP_NAME } from '../../../utils/constants'
+import { ABOUT_DATA, APP_NAME } from '../../../utils/constants'
 
 const About = () => {
   return (
-    <section id="about" className=" my-10 bg-w bg-cover bg-center py-8 md:px-5">
-      <div className="mx-auto flex w-full max-w-5xl  flex-col justify-center">
-        <div className="mx-auto flex w-full max-w-[90%] flex-col space-y-5 md:max-w-full">
-          <h2 className="mb-2 text-center text-2xl font-bold sm:text-2xl lg:text-4xl xl:text-4xl">
-            Get To Know Us
-          </h2>
-          <div className="flex flex-col sm:space-y-5 md:flex-row md:items-center md:justify-between md:space-y-0">
-            <div className="w-full text-center md:w-1/2 md:flex-shrink-0 md:text-left">
-              <p className="text-sm font-light leading-normal lg:text-base">
-                We powered next generation application for blockchain and
-                cryptocurrency asset management which enables you to manually or
-                automatically sync your crypto wallets accounts into a single
-                platform.
-              </p>
-              <p className="mt-3 text-sm font-light leading-normal lg:mt-5 lg:text-base">
-                One combined view for all of the transaction histories across
-                all of your accounts.
+    <section
+      id="about"
+      className="my-10 min-h-screen bg-ab2 bg-cover bg-center py-8 md:px-5"
+    >
+      <div className="mx-auto flex h-full w-full flex-col items-center justify-center space-y-8 p-5 sm:max-w-lg sm:space-y-12 md:max-w-xl lg:max-w-6xl">
+        {ABOUT_DATA.map((item, i) => (
+          <div
+            className={`flex flex-col text-center ${
+              i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+            } lg:items-center lg:text-left`}
+            key={i}
+          >
+            <div className="space-y-5 lg:w-1/2">
+              <h3 className="text-2xl font-semibold sm:text-3xl lg:text-[40px] lg:leading-[1.3]">
+                <span className="">{item.heading1} </span>
+                <span className="bg-lg1 bg-clip-text text-transparent">
+                  {item.heading2}
+                </span>
+              </h3>
+              <p className="font-light leading-relaxed lg:text-lg">
+                {item.description}
               </p>
             </div>
-            <div className="w-full md:w-[45%] md:flex-shrink-0">
-              <div className="relative h-52 w-full md:h-36 lg:h-44 xl:h-48">
-                <Image
-                  src={`/images/view-dashboard.png`}
-                  layout="fill"
-                  objectFit="contain"
-                  alt="view-dashboard image"
-                />
-              </div>
+
+            <div className="relative h-52 sm:h-64 md:h-72 lg:w-1/2">
+              <Image
+                src={`/images/${item.image}.png`}
+                layout="fill"
+                objectFit="contain"
+                objectPosition="center"
+                alt={`${item.image} image`}
+              />
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   )

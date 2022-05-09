@@ -1,3 +1,9 @@
+export type AboutData = {
+  heading1: string
+  heading2: string
+  description: string
+  image: string
+}
 export interface IMenu {
   name: string
   link: string
@@ -44,7 +50,7 @@ export interface IFeatures {
   imgPos: 'left' | 'right'
 }
 
-export interface IWalletData{
+export interface IWalletData {
   name: string
   icon: string
 }

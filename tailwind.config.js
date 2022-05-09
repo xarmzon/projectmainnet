@@ -11,7 +11,7 @@ module.exports = {
         md: '100%',
         lg: '100%',
         xl: '100%',
-        '2xl': '1440px',
+        '2xl': '1280px',
       },
     },
     extend: {
@@ -48,6 +48,7 @@ module.exports = {
         mobile: 'url(/images/shad_mobile.png)',
         desktop: 'url(/images/shad_desktop.png)',
         ab: 'url(/images/bg-ab.png)',
+        ab2: 'url(/images/ab2.png)',
         w: 'url(/images/bg-w.png)',
       },
       colors: {

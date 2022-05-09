@@ -1,12 +1,12 @@
 import { DefaultSeoProps } from 'next-seo'
-import { IFeatures, IMenu, IWalletItem } from './types'
+import { AboutData, IMenu, IWalletItem } from './types'
 
-export const APP_NAME = 'Project Mainnet'
+export const APP_NAME = 'THE PROJECT MAINNET'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
 export const DEFAULT_SEO: DefaultSeoProps = {
-  title: 'THE PROJECT MAINNET',
+  title: "THE PEOPLE'S NETWORKS",
   defaultTitle: '',
   titleTemplate: `%s | ${APP_NAME}`,
   description: `${APP_NAME}, the best way to manage all your wallets from a single app. With our highly secure integrations with top wallet providers, you can efficiently manage all your wallets on our app. Most trusted platform for solutions on all transaction issues, staking issues (pool & farm), balance irregularities, whitelist issues, withdrawal issues and bridging errors.`,
@@ -38,6 +38,23 @@ export const menuItems: IMenu[] = [
   {
     name: 'NFTs',
     link: '/nfts',
+  },
+]
+
+export const ABOUT_DATA: AboutData[] = [
+  {
+    heading1: 'A new universe of',
+    heading2: 'connected services.',
+    description:
+      'Most trusted platform for solutions on all transaction issues, staking issues (pool & farm), balance irregularities, whitelist issues, withdrawal issues and bridging errors.',
+    image: 'app_illustration1',
+  },
+  {
+    heading1: 'The most complex part of web3,',
+    heading2: 'made simple.',
+    description:
+      'We powered next generation application for blockchain and cryptocurrency asset management which enables you to manually or automatically sync your crypto wallets accounts into a single platform.',
+    image: 'app_illustration2',
   },
 ]
 
