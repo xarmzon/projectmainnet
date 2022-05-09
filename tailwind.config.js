@@ -37,7 +37,7 @@ module.exports = {
           'linear-gradient(267.43deg, rgba(30, 4, 77, 0.67) 1.78%, rgba(42, 8, 105, 0.27) 93.47%)',
 
         lg1: 'linear-gradient(89.59deg, #6788FF 22.6%, #C5FFE5 78.98%)',
-        lg2: 'linear-gradient(89.59deg, #6788FF 22.6%, #C5FFE5 78.98%)linear-gradient(96.18deg, rgba(103, 136, 255, 0.69) 9.89%, rgba(85, 74, 179, 0.69) 91.83%)',
+        lg2: 'linear-gradient(96.18deg, rgba(103, 136, 255, 0.69) 9.89%, rgba(85, 74, 179, 0.69) 91.83%)',
         lg3: 'linear-gradient(90.15deg, #981664 35.4%, #F1275A 83.54%)',
         lg4: 'linear-gradient(96.18deg, rgba(103, 136, 255, 0.69) 9.89%, rgba(85, 74, 179, 0.69) 91.83%)',
 
