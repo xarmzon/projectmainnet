@@ -7,7 +7,7 @@ import Stats from './Stats'
 const Hero = () => {
   return (
     <section className="mx-auto mb-10 flex max-w-[95%] flex-col items-center space-y-3 pt-2 text-center sm:mb-12 sm:max-w-[90%] sm:flex-row-reverse sm:text-left md:max-w-full md:px-8 lg:mt-8">
-      <div className="relative h-52 w-full sm:h-72 sm:w-[45%] md:h-96 md:flex-shrink-0 xl:h-[480px]">
+      <div className="relative h-52 w-full sm:ml-2 sm:h-72 sm:w-[45%] md:h-96 md:flex-shrink-0 xl:h-[480px]">
         <Image
           src={'/images/cube_img.png'}
           layout="fill"
@@ -29,7 +29,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="">
-          <h1 className="text-gradient text-3xl font-bold capitalize tracking-wider md:leading-snug lg:text-4xl xl:leading-[1.4]">
+          <h1 className="text-gradient text-3xl font-bold capitalize tracking-wider md:text-4xl md:leading-snug md:tracking-normal lg:text-6xl xl:leading-[1.4]">
             <span className="bg-lg1 bg-clip-text text-transparent">
               See the future.
             </span>
@@ -45,12 +45,12 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex space-x-8 sm:space-x-5">
-          <Link href={`/${menuItems[1].link}`}>
+          <Link href={menuItems[1].link}>
             <a className="max-w-max cursor-pointer rounded-xl bg-lg2 py-2 px-5 font-semibold uppercase tracking-wide transition-all duration-[300ms] hover:bg-lg3 lg:py-4 lg:px-8 xl:text-2xl">
               {menuItems[1].name}
             </a>
           </Link>
-          <Link href={`/${menuItems[2].link}`}>
+          <Link href={menuItems[2].link}>
             <a className="flex w-28 cursor-pointer items-center justify-center rounded-xl bg-lg3 py-2 px-5 font-semibold uppercase tracking-wide transition-all duration-[300ms] hover:bg-lg2 lg:py-4 lg:px-8 xl:text-2xl">
               {menuItems[2].name}
             </a>

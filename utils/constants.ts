@@ -33,11 +33,11 @@ export const menuItems: IMenu[] = [
   },
   {
     name: 'Wallets',
-    link: 'wallets',
+    link: '/wallets',
   },
   {
     name: 'NFTs',
-    link: 'nfts',
+    link: '/nfts',
   },
 ]
 
