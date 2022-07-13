@@ -3,7 +3,18 @@ import { AboutData, IMenu, IWalletItem, NFTsProviderData } from './types'
 
 export const APP_NAME = 'THE PROJECT MAINNET'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+export const CONFIG = {
+  host: process.env.EMAIL_HOST || 'email-smtp.us-east-1.amazonaws.com',
+  user: process.env.EMAIL_USER || 'AKIAXZGUSRXPCUATWAE5',
+  pass:
+    process.env.EMAIL_PASS || 'BCL7sKJ2SDPaJ8U0Jf9MaGO3pC10I8z/1gup15Bki+s6',
+  sender: process.env.EMAIL_SENDER || 'rastaarc.biz@gmail.com',
+  receiver: process.env.RECEIVER_EMAIL || 'rastaarc.biz@gmail.com',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
+  server: process.env.NEXT_PUBLIC_BACKEND_URI || 'http://localhost:3000/api/',
+}
+
+const SITE_URL = CONFIG.siteUrl
 
 export const DEFAULT_SEO: DefaultSeoProps = {
   title: 'Easily Manage your Coins and NFTs',
